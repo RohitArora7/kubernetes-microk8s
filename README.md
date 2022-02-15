@@ -3,11 +3,14 @@
 ```bash
 MICROK8S
 sudo snap install microk8s --classic
+
 FIREWALL
 sudo ufw allow in on cni0 && sudo ufw allow out on cni0
 sudo ufw default allow routed
+
 DASHBOARD
 microk8s enable dns dashboard storage
+
 LIST
 microk8s kubectl get all --all-namespaces
 
