@@ -1,5 +1,6 @@
 # kubernetes-microk8s
 
+```bash
 MICROK8S
 sudo snap install microk8s --classic
 FIREWALL
@@ -21,3 +22,4 @@ cd $HOME
 mkdir .kube
 cd .kube
 microk8s config > config
+```
